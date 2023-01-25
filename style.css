@@ -1,0 +1,81 @@
+.verticalRect {
+    list-style-type: none;
+    margin-left: 100px;
+    padding: 0;
+    width: 100px;
+    background-color: white;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    z-index: 999;
+  }
+
+.horizontalRect {
+    list-style-type: none;
+    margin-bottom: 100px;
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+    height: 100px; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    z-index: -999;
+    bottom: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 250px;
+    padding: 0;
+    overflow: hidden;
+    background-color: tomato;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(180, 8, 8);
+  }
+  
+  .looksActive {
+    background-color: rgb(135, 14, 14);
+  }
+
+  .content{
+    margin-left: 30%;
+  }
+  #logo{
+    margin-left: 25%;
+    height: 500px;
+  }
+
+  h1, p{
+    color:white;
+    font-family: sans-serif;
+    left: 0px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 3px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . ."
+      ". . . ."
+      ". . . .";
+  }
+  
